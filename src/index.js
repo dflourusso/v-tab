@@ -3,7 +3,7 @@ import Tabs from './components/Tabs.vue'
 
 export default {
   install (Vue, options = {}) {
-    Vue.use(Tab)
-    Vue.use(Tabs)
+    Vue.component(Tab)
+    Vue.component(Tabs)
   }
 }
