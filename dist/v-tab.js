@@ -275,10 +275,12 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Tab_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Tab_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Tab_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Tabs_vue__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Tabs_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Tabs_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Tab_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Tab_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Tab_vue__);
+/* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "Tabs", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue___default.a; });
+/* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "Tab", function() { return __WEBPACK_IMPORTED_MODULE_1__components_Tab_vue___default.a; });
 
 
 
@@ -286,10 +288,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   install: function install(Vue) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-    Vue.component(__WEBPACK_IMPORTED_MODULE_0__components_Tab_vue___default.a);
-    Vue.component(__WEBPACK_IMPORTED_MODULE_1__components_Tabs_vue___default.a);
+    Vue.component(__WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue___default.a);
+    Vue.component(__WEBPACK_IMPORTED_MODULE_1__components_Tab_vue___default.a);
   }
 });
+
+
 
 /***/ }),
 /* 6 */
