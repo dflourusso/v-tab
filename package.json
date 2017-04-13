@@ -1,6 +1,6 @@
 {
   "name": "v-tab",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tabs Vue.js Plugin",
   "author": "Daniel Fernando Lourusso <daniel@dflourusso.com.br>",
   "main": "dist/v-tab.js",
