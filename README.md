@@ -24,15 +24,14 @@ Usage
 ### Bundler (Webpack, Rollup)
 
 ```js
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-import VTab from 'v-tab'
-
 // You need a specific loader for CSS files like https://github.com/webpack/css-loader
 import 'v-tab/dist/v-tab.css'
 
-Vue.use(VTab)
+import { Tabs, Tab } from 'v-tab'
+
+export default {
+  components: { Tabs, Tab }
+}
 ```
 
 ### Browser
