@@ -288,8 +288,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   install: function install(Vue) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-    Vue.component(__WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue___default.a);
-    Vue.component(__WEBPACK_IMPORTED_MODULE_1__components_Tab_vue___default.a);
+    Vue.component('Tabs', __WEBPACK_IMPORTED_MODULE_0__components_Tabs_vue___default.a);
+    Vue.component('Tab', __WEBPACK_IMPORTED_MODULE_1__components_Tab_vue___default.a);
   }
 });
 
