@@ -13,11 +13,9 @@ npm install --save v-tab
 yarn add v-tab
 ```
 
-Demo
-----
+![](https://github.com/dflourusso/v-tab/blob/master/print.png)
 
-[DEMO](https://github.com/dflourusso/v-tab)
-
+Reference-style:
 Usage
 -----
 
@@ -34,13 +32,6 @@ export default {
 }
 ```
 
-### Browser
-
-```html
-<link rel="stylesheet" href="v-tab/dist/v-tab.css"></link>
-<script src="v-tab/dist/v-tab.js"></script>
-```
-
 Development
 -----------
 
@@ -49,7 +40,7 @@ Development
 Bundle the js and css of to the `dist` folder:
 
 ```bash
-yarn run build
+yarn build
 # or
 bin/build
 ```
@@ -59,7 +50,7 @@ bin/build
 Bundle the js and css min of to the `dist` folder:
 
 ```bash
-yarn run dist
+yarn dist
 # or
 bin/dist
 ```
@@ -69,12 +60,12 @@ bin/dist
 Bundle aliases for build and dist
 
 ```bash
-yarn run release
+yarn release
 ```
 
 ### Publish
 
-Generate git tag and push to github and npm pusblish
+`bin/publish`
 
 ```bash
 bin/publish
