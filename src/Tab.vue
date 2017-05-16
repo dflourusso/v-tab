@@ -20,7 +20,7 @@ export default{
     }
   },
   created () {
-    window.a = this
+
     let self = this
     let tab = {name: this.name, label: this.label}
 
@@ -38,6 +38,11 @@ export default{
         self.visible = false
       }
     })
+  },
+  watch: {
+    label () {
+      this.$parent.$data.tabs.find(p => p.name == this.name).label = this.label
+    }
   }
 }
 </script>
