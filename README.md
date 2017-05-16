@@ -1,4 +1,7 @@
-# v-tab
+VTab
+---
+
+[![npm](https://img.shields.io/npm/v/v-tab.svg)](https://www.npmjs.com/package/v-tab) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
 > Tab components for Vue.js
 
