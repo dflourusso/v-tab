@@ -1,8 +1,9 @@
 <template lang="pug">
 .v-tab
-  .v-tab-tabs
-    div.v-tab-tab(v-for='tab in tabs', @click='activate(tab)', :class="{active: activeTab === tab.name}")
-      span {{ tab.label }}
+  .v-tab-tabs-group
+    .v-tab-tabs
+      div.v-tab-tab(v-for='tab in tabs', @click='activate(tab)', :class="{active: activeTab === tab.name}")
+        span {{ tab.label }}
   .v-tab-content
     slot
 </template>
@@ -25,13 +26,15 @@ export default {
 </script>
 <style lang="stylus">
 .v-tab
+  display -webkit-flex
+  display flex
+  flex-direction column
   .v-tab-tabs
-    display -webkit-flex /* Safari */
+    display -webkit-flex
     display flex
-    width 100%
+    flex-direction row
     .v-tab-tab
-      -webkit-flex 1  /* Safari 6.1+ */
-      -ms-flex 1  /* IE 10 */
+      -webkit-flex 1
       flex 1
       cursor default
       padding 5px
@@ -41,10 +44,11 @@ export default {
         color #E6E6E6
         background-color #5295CF
   &.v-tab-vertical
+    flex-direction row
     .v-tab-tabs
       flex-direction column
-      max-width 300px
-      float left
+      min-width 300px
     .v-tab-content
-      margin-left 300px
+      -webkit-flex 1
+      flex 1
 </style>
