@@ -3,9 +3,9 @@ const Tabs = require('./Tabs.vue')
 const Tab = require('./Tab.vue')
 const VTab = {
   version: proccess.env.VERSION,
-  install: (vue, options = {}) => {
-    vue.component(options.tabsName || 'tabs', Tabs)
-    vue.component(options.tabName || 'tab', Tab)
+  install: (vue) => {
+    vue.component('v-tabs', Tabs)
+    vue.component('v-tab', Tab)
   }
 }
 

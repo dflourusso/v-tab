@@ -44,18 +44,18 @@ export default {
 <style lang="stylus">
 .v-tab
   &.v-tab-vertical
-    .tab
+    .v-tab-tab
       border-left 1px solid #4F94D1
       border-top 1px solid #4F94D1
       &:last-child
         border-right none
         border-bottom 1px solid #4F94D1
-  .tab
+  .v-tab-tab
     border-left 1px solid #4F94D1
     border-top 1px solid #4F94D1
     &:last-child
       border-right 1px solid #4F94D1
-  .content
+  .v-tab-content
     border 1px solid #4F94D1
     padding 10px
 pre

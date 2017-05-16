@@ -52,7 +52,7 @@ Vue.use(VTab)
 
 ```html
 <template>
-  <v-tabs>
+  <v-tabs class="v-tab-vertical">
     <v-tab label='First'>
       First tab content
     </v-tab>  
@@ -72,9 +72,9 @@ Just override the css classes, See the structure:
 
 ```stylus
 .v-tab
-  .tabs
-    .tab
-  .content
+  .v-tab-tabs
+    .v-tab-tab
+  .v-tab-content
 ```
 
 Author
