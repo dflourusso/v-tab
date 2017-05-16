@@ -1,24 +1,28 @@
 <template>
-  <div v-show="visible">
+  <div v-if="visible">
       <slot></slot>
   </div>
 </template>
 <script>
 export default{
   props: {
-    'name': { required: true },
     'label': { type: String },
-    'selected': {type: Boolean},
-    'icon': {type: String}
+    'selected': {type: Boolean}
   },
   data () {
     return {
       visible: false
     }
   },
+  computed: {
+    name () {
+      return `v-tab-${this._uid}`
+    }
+  },
   created () {
+    window.a = this
     let self = this
-    let tab = {name: this.name, label: this.label, icon: this.icon}
+    let tab = {name: this.name, label: this.label}
 
     if (this.selected === true) {
       this.$parent.$data.activeTab = tab.name

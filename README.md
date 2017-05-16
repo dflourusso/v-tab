@@ -1,81 +1,85 @@
-VTab
----
+# v-tab
 
-[![npm](https://img.shields.io/npm/v/v-tab.svg)](https://www.npmjs.com/package/v-tab) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
-
-> A Vue.js Plugin
+> Tab components for Vue.js
 
 Installation
 ------------
 
-```bash
-npm install --save v-tab
-yarn add v-tab
-```
+### Using yarn
 
-![](https://github.com/dflourusso/v-tab/blob/master/print.png)
+`yarn add v-tab`
 
-Reference-style:
+### Using npm
+
+`npm i --save v-tab`
+
+Demo
+----
+
+[DEMO](http://dflourusso.github.io/v-tab)
+
 Usage
 -----
 
 ### Bundler (Webpack, Rollup)
 
 ```js
+import Vue from 'vue'
+
+import VTab from 'v-tab'
+
 // You need a specific loader for CSS files like https://github.com/webpack/css-loader
 import 'v-tab/dist/v-tab.css'
 
-import { Tabs, Tab } from 'v-tab'
-
-export default {
-  components: { Tabs, Tab }
-}
+Vue.use(VTab)
 ```
 
-Development
------------
+### Browser
 
-### Build
-
-Bundle the js and css of to the `dist` folder:
-
-```bash
-yarn build
-# or
-bin/build
+```html
+<!-- Include after Vue -->
+<link rel="stylesheet" href="v-tab/dist/v-tab.css"></link>
+<script src="v-tab/dist/v-tab.js"></script>
+<script>
+  Vue.use(VTab)
+</script>
 ```
 
-### Dist
+### Example
 
-Bundle the js and css min of to the `dist` folder:
-
-```bash
-yarn dist
-# or
-bin/dist
+```html
+<template>
+  <v-tabs>
+    <v-tab label='First'>
+      First tab content
+    </v-tab>  
+    <v-tab label='Second'>
+      Second tab content
+    </v-tab>  
+    <v-tab label='Third'>
+      Third tab content
+    </v-tab>  
+  </v-tab>
+</template>
 ```
 
-### Release
+### What about appearence?
 
-Bundle aliases for build and dist
+Just override the css classes, See the structure:
 
-```bash
-yarn release
+```stylus
+.v-tab
+  .tabs
+    .tab
+  .content
 ```
 
-### Publish
+Author
+-------
 
-`bin/publish`
-
-```bash
-bin/publish
-```
-
-### Author
-
-[Daniel Fernando Lourusso](http://dflourusso.com.br)
+-	[Daniel Fernando Lourusso](http://dflourusso.com.br)
 
 License
 -------
 
-[MIT](http://opensource.org/licenses/MIT)
+This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)
